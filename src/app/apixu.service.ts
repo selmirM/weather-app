@@ -10,6 +10,6 @@ export class ApixuService {
 
   public getWeather(location) {
     const API_KEY = '88702ac0c574f60681415baabea0c5ad';
-    return this.http.get(`http://api.weatherstack.com/current?access_key=${API_KEY}&query=` + location);
+    return this.http.get(`https://api.weatherstack.com/current?access_key=${API_KEY}&query=` + location);
   }
 }
